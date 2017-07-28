@@ -1,0 +1,122 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
+
+#root {
+  height: 100%;
+}
+
+.container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.contentWrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-75%);
+
+  .logo {
+    text-align: center;
+
+    .titleName {
+      font-size: 18px;
+      color: #b1d2ff;
+      letter-spacing: 9px;
+    }
+  }
+
+  .formBlock {
+    background-color: #fff;
+    width: 315px;
+    height: 225px;
+    border-radius: 4px;
+
+    h2 {
+      font-size: 16px;
+      color: #3d444d;
+      text-align: center;
+      padding: 10px;
+      font-weight: normal;
+    }
+
+    .inputItem {
+      display: flex;
+      position: relative;
+      margin-bottom: 20px;
+
+      label {
+        width: 80px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        padding-top: 10px;
+        color: #3d444d;
+      }
+
+      input {
+        outline: 0;
+        width: 200px;
+        height: 28px;
+        background-color: #fff;
+        border: 1px solid #d9d9d9;
+        border-radius: 2px;
+        transition: all .3s ease-in;
+        padding: 4px 7px;
+        font-size: 16px;
+        color: rgba(0,0,0,.65);
+      }
+
+      input:focus {
+       border-color: #49a9ee;
+       box-shadow: 0 0 0 1px rgba(16,142,233,.2);
+      }
+
+      input::placeholder {
+        color: #d9d9d9;
+      }
+  }
+
+    .errorInfo {
+      position: absolute;
+      left: 82px;
+      top:38px;
+      font-size: 12px;
+      color: #f04134;
+    }
+
+    .btnWrap {
+      padding-left: 80px;
+
+      button {
+        outline: 0;
+        background-color: #43609d;
+        border: none;
+        width: 215px;
+        height: 40px;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 14px;
+        transition: all .3 ease-in;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgba(65,93,157,.8);
+        }
+      }
+    }
+  }
+}
